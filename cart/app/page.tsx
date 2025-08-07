@@ -32,20 +32,20 @@ export default function Cart() {
     <div className="max-w-xl mx-auto py-12">
       <h1 className="text-3xl font-bold mb-6">Cart</h1>
       {cartProducts.length === 0 ? (
-        <div className="text-gray-500">Cart is empty.</div>
+        <div className="text-gray-300">Cart is empty.</div>
       ) : (
         <div className="space-y-4">
           {cartProducts.map((product) => (
             <div key={product.id} className="flex items-center justify-between bg-white rounded shadow p-4">
               <div>
-                <div className="font-semibold">{product.name}</div>
-                <div className="text-gray-500">{product.price} TL</div>
+                <div className="font-semibold text-gray-800">{product.name}</div>
+                <div className="text-gray-600">{product.price} TL</div>
               </div>
             </div>
           ))}
         </div>
       )}
-      <div className="mt-8 text-gray-600">
+      <div className="mt-8 text-gray-300">
         Total products: <b>{cart.length}</b>
       </div>
     </div>

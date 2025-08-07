@@ -38,8 +38,8 @@ export default function Home() {
         {DUMMY_PRODUCTS.map((product) => (
           <div key={product.id} className="flex items-center justify-between bg-white rounded shadow p-4">
             <div>
-              <div className="font-semibold">{product.name}</div>
-              <div className="text-gray-500">{product.price} TL</div>
+              <div className="font-semibold text-gray-800">{product.name}</div>
+              <div className="text-gray-600">{product.price} TL</div>
             </div>
             <button
               className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded"
@@ -50,7 +50,7 @@ export default function Home() {
           </div>
         ))}
       </div>
-      <div className="mt-8 text-gray-600">
+      <div className="mt-8 text-gray-300">
         Cart: <b>{cart.length}</b> Products
       </div>
     </div>
