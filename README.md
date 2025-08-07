@@ -19,19 +19,19 @@ Each app is fully dockerized, can be developed and deployed independently, and f
 - Responsive and clean design
 - Deployed to Vercel for live demo
 - Multi-zone/microfrontend structure
-
+\\
 ---
 
 ## Project Structure
 
 
-microfrontends/
-├── home/
-├── cart/
-├── README.md
-├── docker-compose.yml
+microfrontends/ \
+├── home/ \
+├── cart/ \
+├── README.md \
+├── docker-compose.yml \
 └── vercel.json
-
+\\
 ---
 
 ## Deployment
@@ -40,7 +40,7 @@ Both apps have been deployed independently as separate projects on Vercel:
 - Home app: microfrontend-home.vercel.app
 
 - Cart app: microfrontend-chi.vercel.app
-
+\\
 ---
 
 ## Microfrontend Architecture Notes
@@ -50,7 +50,7 @@ Both apps have been deployed independently as separate projects on Vercel:
 - As is typical for microfrontends, the state (e.g. shopping cart) is not shared between domains due to browser security restrictions (localStorage is per-origin).
 
 - In a production scenario, shared state could be implemented using a backend API, a shared parent app with Module Federation, or solutions like BroadcastChannel.
-
+\\
 --- 
 
 ## Further Improvements
@@ -62,7 +62,7 @@ Both apps have been deployed independently as separate projects on Vercel:
 - Enhanced CI/CD using GitHub Actions
 
 - Monorepo optimization with Turborepo
-
+\\
 --- 
 
 ## Key Notes on Task Requirements
@@ -73,7 +73,7 @@ Both apps have been deployed independently as separate projects on Vercel:
 - The implementation follows modern frontend best practices and incorporates principles from the 12 Factor App methodology and SOLID, as much as possible for a frontend application.
 - Design is fully responsive and built with Tailwind CSS for consistency and maintainability.
 - Deployment was done via Vercel as recommended (CI/CD ready, optional as per assignment).
-
+\\
 --- 
 
 ## Learnings and Challenges
