@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/cart/:match*", "destination": "/cart/:match*" },
+    { "source": "/:match*", "destination": "/home/:match*" }
+  ]
+}

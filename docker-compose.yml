@@ -1,0 +1,9 @@
+services:
+  home:
+    build: ./home
+    ports:
+      - "3000:3000"
+  cart:
+    build: ./cart
+    ports:
+      - "3001:3000"
